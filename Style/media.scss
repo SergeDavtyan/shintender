@@ -1,0 +1,485 @@
+@mixin devices {
+    @media only screen and (max-width: 1360px) {
+        main {
+            .useraccount {
+                .caccount {
+                    &__formtop {
+                        >div {
+                            max-width: 295px;
+                        }
+                    }
+                    &__pass {
+                        width: 295px;
+                    }
+                    &__btn {
+                        width: 220px;
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1235px) {
+        main {
+            .home {
+                .welcomeCon {
+                    &__title {
+                        font-size: 2.4vw;
+                    }
+                } 
+            }
+            .welcome {
+                &__box {
+                    max-width: 500px;
+                }
+            }
+            .useraccount {
+                .caccount {
+                    &__formtop {
+                        >div {
+                            max-width: 285px;
+                        }
+                    }
+                    &__pass {
+                        width: 285px;
+                    }
+                }
+                .welcomeCon {
+                    max-width: 530px;
+                    &__title {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1140px) {
+        main {
+            .home {
+                .welcomeCon {
+                    &__title {
+                        font-size: 2.2vw;
+                    }
+                } 
+            }
+            .welcome {
+                &__box {
+                    max-width: 450px;
+                }
+                &__image {
+                    height: 450px;
+                }
+            }
+            .useraccount {
+                .caccount {
+                    &__name {
+                        font-size: 14px;
+                    }
+                    &__formtop {
+                        >div {
+                            max-width: 235px;
+                        }
+                    }
+                    &__pass {
+                        width: 235px;
+                    }
+                }
+                .welcomeCon {
+                    max-width: 485px;
+                    &__title {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+        
+        main {
+            .home {
+                &__flexible {
+                    &:last-child {
+                        max-width: 380px;
+                        margin-left: 20px;
+                    }
+                }
+                .enter {
+                    &__name {
+                        font-size: 18px;
+                    }
+                    &__btn {
+                        width: 200px;
+                        font-size: 17px;
+                    }
+                    form {
+                        max-width: 285px;
+                    }
+                }
+                .welcomeCon {
+                    &--flex {
+                        max-width: 460px;
+                    }
+                }
+            }
+            .welcome {
+                &__box {
+                    max-width: 350px;
+                }
+                &__image {
+                    height: 350px;
+                }
+                &__text {
+                    font-size: 26px;
+                }
+            }
+            .useraccount {
+                .container {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .caccount {
+                    &__flexible {
+                        &--width {
+                            margin-left: 0;
+                            margin-top: 50px;
+                        }
+                    }
+                    &__formtop {
+                        >div {
+                            max-width: 300px;
+                        }
+                    }
+                    &__pass {
+                        width: 300px;
+                    }
+                }
+                .welcomeCon {
+                    max-width: 690px;
+                    flex-direction: column-reverse;
+                    &__title {
+                        font-size: 33px;
+                        margin-top: 0;
+                        margin-bottom: 65px;
+                    }
+                }
+            }
+            .supplier {
+                max-width: 745px;
+                &__title {
+                    font-size: 27px;
+                }
+            }
+        }
+        footer {
+            .flist {
+                font-size: 16px;
+            }
+            .social {
+                &__item {
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 16px;
+                }
+            }
+        }
+        .header {
+            height: 125px;
+        }
+        .footer {
+            padding: 65px 0;
+        }
+        .sloganText {
+            font-size: 33px;
+            &::before {
+                bottom: -26px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        main {
+            .home {
+                &__flexible {
+                    &:last-child {
+                        max-width: 600px;
+                        margin-left: 0px;
+                    }
+                }
+                .welcomeCon {
+                    &__title {
+                        font-size: 4.5vw;
+                        margin-top: 0px;
+                        margin-bottom: 65px;
+                    }
+                    &__image {
+                        margin-bottom: 65px;
+                    }
+                    &--flex {
+                        max-width: 600px;
+                        flex-direction: column-reverse;
+                    }
+                }
+                .container {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+            .welcome {
+                &__container {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                &__box {
+                    max-width: 520px;
+                    &:first-child {
+                        margin-bottom: 40px;
+                    }
+                }
+                &__image {
+                    height: 520px;
+                }
+            }
+            .useraccount {
+                .caccount {
+                    &__flexible {
+                        &--width {
+                            margin-left: 0;
+                            margin-top: 50px;
+                        }
+                    }
+                    &__formtop {
+                        >div {
+                            max-width: 280px;
+                        }
+                    }
+                    &__pass {
+                        width: 280px;
+                    }
+                }
+                .welcomeCon {
+                    max-width: 690px;
+                    flex-direction: column-reverse;
+                    &__title {
+                        font-size: 28px;
+                        max-width: 630px;
+                    }
+                }
+            }
+            .supplier {
+                &__form {
+                    input {
+                        max-width: 250px;
+                    }
+                }
+                &__login {
+                    max-width: 250px;
+                }
+                &__pass {
+                    max-width: 250px;
+                }
+                &__flexible {
+                    &--week {
+                        .option {
+                            width: 125px;
+                            &__name {
+                                padding: 0 11px;
+                                font-size: 13px;
+                                i {
+                                    margin-left: 9px;
+                                    font-size: 13px;
+                                }
+                            }
+                            &__list {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                &__codeText {
+                    width: 300px;
+                    font-size: 11px;
+                }
+                &__container {
+                    justify-content: space-around;
+                    >div {
+                        width: 100%;
+                        max-width: 255px;
+                    }
+                }
+                iframe {
+                    width: 255px;
+                    height: 265px;
+                }
+                .send {
+                    font-size: 16px;
+                    width: 200px;
+                }
+            }
+            .termsuse, .privacypolicy {
+                p {
+                    font-size: 19px;
+                }
+            }
+        }
+        footer {
+            .flist {
+                font-size: 12px;
+            }
+            .social {
+                &__item {
+                    width: 25px;
+                    height: 25px;
+                    margin-right: 11px;
+                }
+            }
+        }
+        .header {
+            height: auto;
+        }
+        .footer {
+            padding: 25px 0;
+        }
+        .sloganText {
+            font-size: 20px;
+        }
+    }
+
+    @media only screen and (max-width: 576px) {
+        header {
+            height: auto;
+            .container {
+                flex-direction: column;
+                .sloganText {
+                    font-size: 19px;
+                    margin-top: 10px;
+                    &::before {
+                        bottom: -10px;
+                    }
+                }
+            }
+        }
+        main {
+            .home {
+                .welcomeCon {
+                    &__title {
+                        line-height: 24px;
+                    }
+                }
+            }
+            .welcome {
+                &__image {
+                    height: 400px;
+                }
+            }
+            .useraccount {
+                .caccount {
+                    &__formtop {
+                        >div {
+                            max-width: 210px;
+                        }
+                    }
+                    &__pass {
+                        width: 210px;
+                    }
+                }
+                .welcomeCon {
+                    max-width: 690px;
+                    flex-direction: column-reverse;
+                    &__title {
+                        font-size: 21px;
+                        max-width: 470px;
+                        line-height: 30px;
+                    }
+                }
+            }
+            .supplier {
+                &__login {
+                    max-width: 320px;
+                }
+                &__pass {
+                    width: 100%;
+                    max-width: 320px;
+                }
+                &__form {
+                    input {
+                        max-width: 320px;
+                    }
+                }
+                &__container {
+                    flex-direction: column;
+                    align-items: center;
+                    >div {
+                        max-width: 320px;
+                    }
+                    .width {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+        footer {
+            .social {
+                margin: 20px 0;
+            }
+            .container {
+                flex-direction: column;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 430px) {
+        main {
+            .welcome {
+                &__image {
+                    height: 250px;
+                }
+            }
+            .useraccount {
+                .caccount {
+                    &__formtop {
+                        flex-direction: column;
+                        align-items: center;
+                        >div {
+                            max-width: 300px;
+                        }
+                    }
+                    &__formbottom {
+                        flex-direction: column;
+                        >div {
+                            &:first-child {
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                    &__pass {
+                        width: 300px;
+                    }
+                    &__flexible {
+                        &--width {
+                            max-width: 300px;
+                        }
+                    }
+                }
+                .welcomeCon {
+                    &__title {
+                        font-size: 16px;
+                        max-width: 360px;
+                    }
+                }
+            }
+            .termsuse, .privacypolicy {
+                &__title {
+                    font-size: 24px;
+                }
+                p {
+                    font-size: 17px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+   
+}

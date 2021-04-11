@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Mardoto";
+  src: url(../fonts/ttf/Mardoto-Black.ttf);
+}
+
+@font-face {
+  font-family: "Mardoto-Regular";
+  src: url(../fonts/ttf/Mardoto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Mardoto-Medium";
+  src: url(../fonts/ttf/Mardoto-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Mardoto-MediumItalic";
+  src: url(../fonts/ttf/Mardoto-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: "Mardoto-Italic";
+  src: url(../fonts/ttf/Mardoto-Italic.ttf);
+}
+
+@font-face {
+  font-family: "Mardoto-Bold";
+  src: url(../fonts/ttf/Mardoto-Bold.ttf);
+}
+/*# sourceMappingURL=fonts.css.map */

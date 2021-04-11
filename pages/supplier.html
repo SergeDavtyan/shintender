@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <link rel="stylesheet" href="../Style/style.css">
+
+    <title>Tender</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="./home.html"><img src="../images/Logo.png" alt="Logo"></a>
+            </div>
+
+            <p class="sloganText">Փոխում ենք խաղի կանոնները</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="supplier container">
+            <h1 class="supplier__title">Ստեղծել հաշիվ</h1>
+            <div class="supplier__container">
+
+                <div class="width">
+                    <form class="supplier__form">
+                        <p class="supplier__name supplier__name--margin">Կազմակերպության անվանում</p>
+                        <input type="text">
+
+                        <p class="supplier__name">Լոզունգ</p>
+                        <input type="text">
+                    </form>
+
+                    <p class="supplier__name">Ներբեռնել նկար</p>
+                    <div class="upload">
+                        <form><input type="file"></form>
+                        <svg height="32px" viewBox="0 0 426.66667 426.66667" width="32px">
+                            <path
+                                d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0" />
+                        </svg>
+                    </div>
+
+                    <form>
+                        <p class="supplier__name">Լոգին</p>
+                        <input type="text" class="supplier__login">
+
+                        <p class="supplier__name">Ստեղծել գաղտնաբառ</p>
+                        <div class="pass">
+                            <input type="password" class="supplier__password pass_pass">
+                            <img src="../images/eye.png" alt="Eye" class="supplier__eye pass_eye">
+                        </div>
+
+                        <p class="supplier__name">Հաստատել գաղտնաբառը</p>
+                        <div class="pass">
+                            <input type="password" class="supplier__password pass_pass">
+                            <img src="../images/eye.png" alt="Eye" class="supplier__eye pass_eye">
+                        </div>
+                    </form>
+
+                    <p class="supplier__name">Աշխատանքային օրեր</p>
+                    <div class="supplier__flexible supplier__flexible--week">
+                        <div class="option">
+                            <p class="option__name"><span class="option__name_val">Չորեքշաբթի</span><i
+                                    class="fas fa-chevron-down"></i></p>
+                            <ul class="option__list">
+                                <li class="option__item">Երկուշաբթի</li>
+                                <li class="option__item">Երեքշաբթի</li>
+                                <li class="option__item">Չորեքշաբթի</li>
+                                <li class="option__item">Հինգշաբթի</li>
+                                <li class="option__item">Ուրբաթ</li>
+                            </ul>
+                        </div>
+                        <div class="supplier__line"></div>
+                        <div class="option">
+                            <p class="option__name"><span class="option__name_val">Ուրբաթ</span><i
+                                    class="fas fa-chevron-down"></i></p>
+                            <ul class="option__list">
+                                <li class="option__item">Երկուշաբթի</li>
+                                <li class="option__item">Երեքշաբթի</li>
+                                <li class="option__item">Չորեքշաբթի</li>
+                                <li class="option__item">Հինգշաբթի</li>
+                                <li class="option__item">Ուրբաթ</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p class="supplier__name">Աշխատանքային ժամեր</p>
+                    <div class="supplier__flexible">
+                        <div class="option">
+                            <p class="option__name"><span class="option__name_val">10։00</span><i
+                                    class="fas fa-chevron-down"></i></p>
+                            <ul class="option__list">
+                                <li class="option__item">10։00</li>
+                                <li class="option__item">11։00</li>
+                                <li class="option__item">12։00</li>
+                            </ul>
+                        </div>
+                        <div class="supplier__line"></div>
+                        <div class="option">
+                            <p class="option__name"><span class="option__name_val">20։00</span><i
+                                    class="fas fa-chevron-down"></i></p>
+                            <ul class="option__list">
+                                <li class="option__item">18։00</li>
+                                <li class="option__item">19։00</li>
+                                <li class="option__item">20։00</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <form class="supplier__form">
+                        <p class="supplier__name">Հեռախոսահամար<span>*</span></p>
+                        <input type="text" class="supplier__phone">
+
+                        <p class="supplier__name">Բջջային հեռախոսահամար<span>*</span></p>
+                        <input type="text" class="supplier__mphone">
+                    </form>
+
+                    <button class="send btn">Ուղարկել կոդը</button>
+
+                    <p class="supplier__codeText">Մուտքագրեք Ձեր հեռախոսահամարին ուղարկված կոդը</p>
+
+                    <div class="pcode">
+                        <input type="text" maxlength="4">
+                        <div class="pcode__done active"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <form class="supplier__form">
+                        <p class="supplier__name supplier__name--margin">Հասցե</p>
+                        <input type="text" class="supplier__address">
+                    </form>
+
+                    <p class="supplier__name">Նշեք հասցեն քարտեզի վրա</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8135.16830124294!2d44.51665417544153!3d40.203610977302944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406aa2b571bfd18f%3A0x7c2887426295bd07!2sGlobbing!5e0!3m2!1sru!2s!4v1613397572750!5m2!1sru!2s"
+                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>
+                </div>
+
+            </div>
+            <button class="supplier__btn btn">Գրանցվել</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+
+            <ul class="flist">
+                <li class="flist__item">Հեռախոսահամար՝ +374 00 00 00 00</li>
+                <li class="flist__item">Էլ․ հասցե՝ myemail@gmail.com</li>
+            </ul>
+
+            <ul class="social">
+                <li class="social__item"><a href="#"><img src="../images/facebook.png" alt="Social"></a></li>
+                <li class="social__item"><a href="#"><img src="../images/facebook.png" alt="Social"></a></li>
+                <li class="social__item"><a href="#"><img src="../images/facebook.png" alt="Social"></a></li>
+            </ul>
+
+            <ul class="flist">
+                <li class="flist__item">Գաղտնիության քաղաքականություն</li>
+                <li class="flist__item">Օգտագործման կանոններ</li>
+            </ul>
+
+        </div>
+    </footer>
+
+    <script src="../JS/main.js"></script>
+</body>
+
+</html>
