@@ -1,3 +1,33 @@
+@font-face {
+  font-family: "Mardoto";
+  src: url(../fonts/ttf/Mardoto-Black.ttf);
+}
+
+@font-face {
+  font-family: "Mardoto-Regular";
+  src: url(../fonts/ttf/Mardoto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Mardoto-Medium";
+  src: url(../fonts/ttf/Mardoto-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Mardoto-MediumItalic";
+  src: url(../fonts/ttf/Mardoto-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: "Mardoto-Italic";
+  src: url(../fonts/ttf/Mardoto-Italic.ttf);
+}
+
+@font-face {
+  font-family: "Mardoto-Bold";
+  src: url(../fonts/ttf/Mardoto-Bold.ttf);
+}
+
 body, * {
   margin: 0;
   padding: 0;
@@ -967,6 +997,148 @@ input, button {
   font-size: 20px;
 }
 
+.modal .regpay {
+  width: 550px;
+  padding: 40px 15px;
+}
+
+.modal .regpay__item {
+  margin-bottom: 10px;
+}
+
+.modal .regpay__item ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px 2px 6px #00000029;
+          box-shadow: 0px 2px 6px #00000029;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.modal .regpay__item ul li {
+  width: 100%;
+  max-width: 136px;
+  text-align: center;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.modal .regpay__item ul li button {
+  place-items: center;
+  background-color: #afd275;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  -webkit-box-shadow: 6px 6px 14px 0 rgba(127, 170, 55, 0.5), -7px -7px 12px 0 rgba(220, 235, 194, 0.4);
+          box-shadow: 6px 6px 14px 0 rgba(127, 170, 55, 0.5), -7px -7px 12px 0 rgba(220, 235, 194, 0.4);
+  font-size: 13px;
+  margin-left: 20px;
+}
+
+.modal .regpay__item ul li button:first-child {
+  margin-left: 0;
+}
+
+.modal .regpay__item ul li button:hover {
+  -webkit-box-shadow: 6px 6px 14px 0 rgba(127, 170, 55, 0.5) inset, -7px -7px 12px 0 rgba(220, 235, 194, 0.4) inset;
+          box-shadow: 6px 6px 14px 0 rgba(127, 170, 55, 0.5) inset, -7px -7px 12px 0 rgba(220, 235, 194, 0.4) inset;
+  cursor: pointer;
+}
+
+.modal .regpay__item ul li span {
+  position: absolute;
+  bottom: -8px;
+  font-size: 12px;
+  right: 5px;
+  color: gray;
+}
+
+.modal .regpay__item ul li span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -6%;
+  width: 110%;
+  height: 1px;
+  background: red;
+  display: block;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.modal .regpay__item ul li .regpay_code.deactivate {
+  display: none;
+}
+
+.modal .regpay__item:last-child {
+  margin-bottom: 0;
+}
+
+.modal .regpay__item--head {
+  margin-bottom: 20px;
+}
+
+.modal .regpay__item--head ul {
+  background: #FFD063;
+}
+
+.modal .regpay__item--head ul li {
+  font-family: "Mardoto-Bold";
+  font-size: 17px;
+  color: #4C4C4C;
+}
+
+.modal .regpay__item input {
+  width: 100%;
+  border: 1px solid white;
+  -webkit-box-shadow: 6px 6px 14px 0 rgba(144, 144, 144, 0.5), -7px -7px 12px 0 rgba(220, 235, 194, 0.4);
+          box-shadow: 6px 6px 14px 0 rgba(144, 144, 144, 0.5), -7px -7px 12px 0 rgba(220, 235, 194, 0.4);
+  padding: 2px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.modal .regpay__item--free ul li {
+  max-width: none;
+  font-family: "Mardoto-Medium";
+}
+
+.modal .regpay__btn.deactivate {
+  display: none;
+}
+
+.modal .regpay__line {
+  position: relative;
+}
+
+.modal .regpay__line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 30px);
+  left: 15px;
+  height: 2px;
+  background: #FFD063;
+  border-radius: 50px;
+}
+
 .modal svg {
   position: absolute;
   top: -17px;
@@ -995,7 +1167,6 @@ input, button {
   width: 8px;
 }
 
-/* Track */
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #A8A8A8;

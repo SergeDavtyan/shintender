@@ -1,4 +1,5 @@
 @import "colors.scss";
+@import "fonts.scss";
 
 body, * {
     margin: 0;
@@ -231,42 +232,6 @@ input, button {
             ul:nth-of-type(1) {
                 max-width: 575px;
             }
-            // ul:nth-of-type(2) {
-            //     position: absolute;
-            //     top: -68px;
-            //     right: 0;
-            //     background: #fff;
-            //     box-shadow: 0px 2px 6px #00000029;
-            //     border-radius: 8px;
-            //     width: 360px;
-            //     height: 160px;
-            //     z-index: 2;
-            //     display: flex;
-            //     flex-direction: column;
-            //     justify-content: center;
-            //     padding: 32px;
-            //     li {
-            //         margin-bottom: 8px;
-            //         cursor: pointer;
-            //         &:first-child {
-            //             font-family: "Mardoto-Medium";
-            //             font-size: 20px;
-            //             margin-bottom: 16px;
-            //             cursor: inherit;
-            //         }
-            //         &:last-child {
-            //             margin-bottom: 0;
-            //         }
-            //     }
-            // }
-            // .applist_sort {
-            //     position: absolute;
-            //     top: -60px;
-            //     right: 0;
-            //     width: 32px;
-            //     height: 32px;
-            //     cursor: pointer;
-            // }
         }
         &:last-child {
             margin-bottom: 0;
@@ -796,6 +761,127 @@ input, button {
             font-size: 20px;
         }
     }
+    .regpay {
+        width: 550px;
+        padding: 40px 15px;
+        
+        &__item {
+            margin-bottom: 10px;
+            ul {
+                display: flex;
+                box-shadow: 0px 2px 6px #00000029;
+                padding: 5px;
+                border-radius: 50px;
+                li {
+                    width: 100%;
+                    max-width: 136px;
+                    text-align: center;
+                    font-size: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    button {
+                        place-items: center;
+                        background-color: #afd275;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        text-align: center;
+                        color: #fff;
+                        transition: all .3s;
+                        padding: 5px 10px;
+                        border: none;
+                        border-radius: 6px;
+                        box-shadow: 6px 6px 14px 0 rgba(127, 170, 55, 0.5),
+                        -7px -7px 12px 0 rgba(220, 235, 194, 0.4);
+                        font-size: 13px;
+                        margin-left: 20px;
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                        &:hover {
+                            box-shadow: 6px 6px 14px 0 rgba(127, 170, 55, 0.5) inset,
+                            -7px -7px 12px 0 rgba(220, 235, 194, 0.4) inset;
+                            cursor: pointer;
+                        }
+                    }
+                    span {
+                        position: absolute;
+                        bottom: -8px;
+                        font-size: 12px;
+                        right: 5px;
+                        color: gray;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: -6%;
+                            width: 110%;
+                            height: 1px;
+                            background: red;
+                            display: block;
+                            transform: rotate(10deg);
+                        }
+                    }
+                    .regpay_code {
+                        &.deactivate {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &--head {
+                margin-bottom: 20px;
+                ul {
+                    background: #FFD063;
+                    li {
+                        font-family: "Mardoto-Bold";
+                        font-size: 17px;
+                        color: $btn_color;
+                    }
+                }
+            }
+            input {
+                width: 100%;
+                border: 1px solid white;
+                box-shadow: 6px 6px 14px 0 rgba(144, 144, 144, 0.5),
+                        -7px -7px 12px 0 rgba(220, 235, 194, 0.4);
+                padding: 2px;
+                letter-spacing: 4px;
+                text-align: center;
+            }
+            &--free {
+                ul {
+                    li {
+                        max-width: none;
+                        font-family: "Mardoto-Medium";
+                    }
+                }
+            }
+        }
+        &__btn {
+            &.deactivate {
+                display: none;
+            }
+        }
+        &__line {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: calc(100% - 30px);
+                left: 15px;
+                height: 2px;
+                background: #FFD063;
+                border-radius: 50px;
+            }
+        }
+    }
     svg {
         position: absolute;
         top: -17px;
@@ -823,12 +909,6 @@ input, button {
 ::-webkit-scrollbar {
     width: 8px;
 }
-
-/* Track */
-// ::-webkit-scrollbar-track {
-//     box-shadow: inset 0 0 5px grey; 
-//     border-radius: 5px;
-// }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {

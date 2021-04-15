@@ -130,11 +130,46 @@ const MODAL_CLOSE = document.querySelectorAll(".modal svg");
 
 if (MODAL_CLOSE) {
     for (let i = 0; i < MODAL.length; i++) {
-        MODAL_CLOSE[i].addEventListener("click", () => {
-            MODAL[i].classList.remove("active");
-            for (let i = 0; i < MODAL_BACKGROUND.length; i++) {
-                MODAL_BACKGROUND[i].classList.remove("active");
-            }
+        if (MODAL_CLOSE[i]) {
+            MODAL_CLOSE[i].addEventListener("click", () => {
+                MODAL[i].classList.remove("active");
+                for (let i = 0; i < MODAL_BACKGROUND.length; i++) {
+                    MODAL_BACKGROUND[i].classList.remove("active");
+                }
+            })
+        }
+    }
+}
+
+// ----- MODAL CLOSE END
+
+// ----- PAY BUTTON START
+
+const REGPAY_BTN = document.querySelectorAll(".regpay__btn");
+const REGPAY_CARD = document.querySelectorAll(".regpay_card");
+const REGPAY_HAND = document.querySelectorAll(".regpay_hand");
+const REGPAY_CODE = document.querySelectorAll(".regpay_code");
+const REGPAY_SEND = document.querySelectorAll(".regpay_send");
+
+if (REGPAY_HAND) {
+    for (let i = 0; i < REGPAY_HAND.length; i++) {
+        REGPAY_HAND[i].addEventListener("click", () => {
+            REGPAY_CARD[i].classList.add("deactivate");
+            REGPAY_HAND[i].classList.add("deactivate");
+            REGPAY_CODE[i].classList.remove("deactivate");
+            REGPAY_SEND[i].classList.remove("deactivate");
         })
     }
 }
+
+
+const caccount_btn = document.querySelector(".caccount_confirm");
+const modal_background = document.querySelectorAll(".modal_background");
+const mmodal = document.querySelector(".modal");
+
+caccount_btn.addEventListener("click", () => {
+    for (let i = 0; i < modal_background.length; i++) {
+        modal_background[i].classList.add("active");
+    }
+    mmodal.classList.add("active");
+})
