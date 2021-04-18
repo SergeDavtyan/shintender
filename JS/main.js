@@ -167,9 +167,11 @@ const caccount_btn = document.querySelector(".caccount_confirm");
 const modal_background = document.querySelectorAll(".modal_background");
 const mmodal = document.querySelector(".modal");
 
-caccount_btn.addEventListener("click", () => {
-    for (let i = 0; i < modal_background.length; i++) {
-        modal_background[i].classList.add("active");
-    }
-    mmodal.classList.add("active");
-})
+if (caccount_btn) {
+    caccount_btn.addEventListener("click", () => {
+        for (let i = 0; i < modal_background.length; i++) {
+            modal_background[i].classList.add("active");
+        }
+        mmodal.classList.add("active");
+    })
+}
